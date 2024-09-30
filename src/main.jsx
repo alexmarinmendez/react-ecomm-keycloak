@@ -32,11 +32,11 @@ const router = createBrowserRouter([
 ])
 
 createRoot(document.getElementById('root')).render(
-  // <StrictMode>
-  <UserLoginContextProvider>
-    <ProductContextProvider>
-      <RouterProvider router={router} />
-    </ProductContextProvider>
-  </UserLoginContextProvider>
-  // </StrictMode>,
+  <StrictMode>
+    <UserLoginContextProvider>
+      <ProductContextProvider>
+        <RouterProvider router={router} />
+      </ProductContextProvider>
+    </UserLoginContextProvider>
+  </StrictMode>,
 )
